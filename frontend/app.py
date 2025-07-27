@@ -14,9 +14,9 @@ st.sidebar.markdown("Ask anything about our products:")
 # Display full chat history in sidebar
 for msg in st.session_state.chat_history:
     if msg.startswith("User:"):
-        st.sidebar.markdown(f"<div style='color:#1E88E5'><b>{msg}</b></div>", unsafe_allow_html=True)
+        st.sidebar.markdown(f"<div ><b>{msg}</b></div>", unsafe_allow_html=True)
     else:
-        st.sidebar.markdown(f"<div style='color:#2E7D32'><b>{msg}</b></div>", unsafe_allow_html=True)
+        st.sidebar.markdown(f"<div style='color:#A4ADB0'>{msg}</div>", unsafe_allow_html=True)
 
 # User input
 with st.sidebar:

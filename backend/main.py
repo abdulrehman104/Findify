@@ -18,3 +18,6 @@ app.add_middleware(
 
 app.include_router(chat.router)
 app.include_router(products.router)
+
+
+# uvicorn backend.main:app --> Use this command to run the app

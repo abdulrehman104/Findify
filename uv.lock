@@ -6,6 +6,13 @@ resolution-markers = [
     "platform_python_implementation == 'PyPy'",
 ]
 
+[manifest]
+members = [
+    "backend",
+    "findify",
+    "frontend",
+]
+
 [[package]]
 name = "aiohappyeyeballs"
 version = "2.6.1"
@@ -119,6 +126,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/5a/b0/1367933a8532ee6ff
 wheels = [
     { url = "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl", hash = "sha256:427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3", size = 63815, upload-time = "2025-03-13T11:10:21.14Z" },
 ]
+
+[[package]]
+name = "backend"
+version = "0.1.0"
+source = { virtual = "backend" }
 
 [[package]]
 name = "blinker"
@@ -276,6 +288,11 @@ requires-dist = [
     { name = "tqdm", specifier = ">=4.67.1" },
     { name = "uvicorn", specifier = ">=0.35.0" },
 ]
+
+[[package]]
+name = "frontend"
+version = "0.1.0"
+source = { virtual = "frontend" }
 
 [[package]]
 name = "frozenlist"
